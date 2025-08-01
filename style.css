@@ -1,0 +1,33 @@
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,sans-serif}
+
+/* Layout */
+body{
+  height:100vh;display:flex;align-items:center;justify-content:center;
+  background:#eceff1;
+}
+.calculator{
+  width:320px;background:#1e1e1e;border-radius:1rem;
+  box-shadow:0 1rem 2rem rgba(0,0,0,.25);padding:1rem;
+}
+
+/* Display */
+.display{
+  width:100%;height:70px;background:#000;color:#0f0;border:none;
+  border-radius:.5rem;font-size:2rem;padding:.5rem 1rem;text-align:right;
+  margin-bottom:1rem;
+}
+
+/* Keys grid */
+.keys{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;
+}
+.key{
+  height:60px;border:none;border-radius:.5rem;font-size:1.4rem;
+  background:#2e2e2e;color:#fff;cursor:pointer;transition:background .1s;
+}
+.key:hover{background:#3d3d3d}
+
+.op      {background:#ff9500}.op:hover   {background:#ffa733}
+.alt     {background:#616161}.alt:hover  {background:#757575}
+.equals  {background:#34c759}.equals:hover{background:#53d977}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <input id="display" class="display" type="text" readonly />
+
+    <div class="keys">
+      <!-- Row 1 -->
+      <button data-action="clear"     class="key alt">C</button>
+      <button data-action="bracket"   class="key alt">()</button>
+      <button data-value="%"          class="key">%</button>
+      <button data-value="/"          class="key op">÷</button>
+
+      <!-- Row 2 -->
+      <button data-value="7" class="key">7</button>
+      <button data-value="8" class="key">8</button>
+      <button data-value="9" class="key">9</button>
+      <button data-value="*" class="key op">×</button>
+
+      <!-- Row 3 -->
+      <button data-value="4" class="key">4</button>
+      <button data-value="5" class="key">5</button>
+      <button data-value="6" class="key">6</button>
+      <button data-value="-" class="key op">−</button>
+
+      <!-- Row 4 -->
+      <button data-value="1" class="key">1</button>
+      <button data-value="2" class="key">2</button>
+      <button data-value="3" class="key">3</button>
+      <button data-value="+" class="key op">+</button>
+
+      <!-- Row 5 -->
+      <button data-value="0"           class="key">0</button>
+      <button data-value="."           class="key">.</button>
+      <button data-action="backspace"  class="key alt">⌫</button>
+      <button data-action="equals"     class="key equals">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
